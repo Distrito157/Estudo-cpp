@@ -18,7 +18,7 @@ Aqui está uma explicação detalhada de cada elemento:
 + **valor_retorno**: é o valor que a função retorna. Se a função tiver um tipo de retorno diferente de `void`, você deve usar a palavra-chave return seguida pelo valor que deseja retornar. O valor de retorno deve ser do tipo especificado pelo tipo de retorno da função.
 
 Vejamos um exemplo de função simples que calcula a soma de dois números:
-```
+```C++
 int somar(int a, int b) {
     int resultado = a + b;
     return resultado;
