@@ -36,7 +36,7 @@ com o usuário e exibir resultados do programa.
 em diferentes partes do código têm escopos diferentes, e sua vida útil é limitada ao escopo em que
 foram declaradas.
 
-9. **Classes e objetos: C++ é uma linguagem de programação orientada a objetos, permitindo a criação
+9. **Classes e objetos**: C++ é uma linguagem de programação orientada a objetos, permitindo a criação
 de classes e objetos. As classes são estruturas que encapsulam dados e comportamentos relacionados. Os
 objetos são instâncias das classes, que podem ser criados e utilizados para interagir com os dados e
 métodos da classe.
