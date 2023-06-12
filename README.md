@@ -18,6 +18,7 @@ Para mais informações: [Estruturas de controle](estruturasControle.md)
 4. **Funções:** As funções em C++ permitem agrupar blocos de código reutilizáveis.
 Elas podem receber argumentos (parâmetros), realizar um processamento e retornar um valor.
 As funções ajudam a modularizar o código e facilitam a manutenção e a reutilização.
+Para mais informações: [Funções](funcoes.md)
 
 5. **Arrays:** Arrays são coleções de elmentos do mesmo tipo de dado, Eles permitem armazenar
 múltiplos valores em uma única variável.
