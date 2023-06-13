@@ -1,14 +1,14 @@
-1. **Variáveis e tipos de dados:** Em c++, da para guardar dados declarando
+1. **Variáveis e tipos de dados:** Em C++, da para guardar dados declarando
 o tipo de variaveis e depois o valor a ser guardo:
 ponto flutuante(`float`, double), números inteiros(`int`),
 caracteres(`char`) e booleanos(`bool`).
-Para mais informaçõens: [Variáveis e tipos de dados](variaveis.md)
+Para mais informações: [Variáveis e tipos de dados](variaveis.md)
 
 2. **Operadores:** C++ oferece vários operadores para realizar operações em
 variaveis e valores: alguns exemplos de ops aritméticos: (como `+`, `-`, `*`, `/`).
 Operadores de comparação: (como `==`, `!=`, `<`, `>`, `<=`, `>=`).
 Operadores lógicos(como `&&`, `||`, `!` ou `and`, `or`, `not`) e operadores de atribuição(como `=`).
-Para mais informaçõens: [Operadores](operadores.md)
+Para mais informações: [Operadores](operadores.md)
 
 3. **Estruturas de controle:** C++ possui estruturas de controle, como condicionais:
 (`if`, `else`, `switch`) e loops (`for`, `while`, `do-while`), que permitem controlar o fluxo de
