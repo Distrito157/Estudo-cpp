@@ -1,7 +1,8 @@
-**Em C++, as variáveis são usadas para armazenar valores na memória do computador.
+# Introdução
+Em C++, as variáveis são usadas para armazenar valores na memória do computador.
 Antes de usar uma variável, você precisa declará-la, especificando seu tipo de dado e
 um nome único. Os tipos de dados determinam a natureza dos valores que a variável pode
-armazenar e as operações que podem ser realizadas sobre esses valores.**
+armazenar e as operações que podem ser realizadas sobre esses valores.
 
 # Aqui estão alguns dos tipos de dados básicos em C++:
 **Inteiros:** O tipo `int` é usado para armazenar números inteiros. Ele pode representar valores positivos,
