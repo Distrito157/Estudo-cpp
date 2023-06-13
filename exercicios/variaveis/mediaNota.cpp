@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-  int nota1, nota2, nota3;
+  double nota1, nota2, nota3;
   cout << "Digite a primeira nota: ";
   cin >> nota1;
   cout << "Digite a segunda nota: ";
@@ -16,7 +16,7 @@ int main() {
     cout << "Não pode haver nota(s) maiores que 10" << endl;
     cout << "Também Não pode haver nota(s) negativas" << endl;
   } else {
-    int media = (nota1 + nota2 + nota3) / 3;
+    double media = (nota1 + nota2 + nota3) / 3;
     cout << "A média das notas é: " << media << endl;
   }
 
