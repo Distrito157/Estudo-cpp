@@ -93,3 +93,81 @@ int main() {
 Em resumo, as variáveis globais em C++ são declaradas fora de qualquer função e podem ser acessadas e modificadas em todo o programa. As variáveis locais são declaradas dentro de um bloco de código e são visiveis apenas dentro desse bloco.
 
 Lembre-se de que o uso excessivo de variáveis globais pode dificultar a depuração e a manutenção do código, tornando-o mais propenso a erros e menos modular. É recomendado utiliz variáveis locais sempre que possível e limitar o escopo das variáveis ao mínimo necessário.
+
+# Incremento e decremento de variáveis:
+Em C++, os operadores de incremento e decremento são usados para aumentar ou diminuir o valor de uma variável por um determinado número. Esses operadores têm duas formas: `pré-incremento/pre-decremento` e `pós-incremento/pós-decremento.`
+## Incremento:
++ pré-incremento (++variavel): Aumenta o valor da variável em 1 antes de qualquer outra operação.
++ Pós-incremento (variavel++): Aumenta o valor da variável em 1 após a operação atual.
+
+Exemplo de pré-incremento:
+```C++
+#include <iostream>
+
+int main() {
+  int x = 5;
+  int y = ++x;
+
+  std::cout << "x: " << x << std::endl; // Saída: 6
+  std::cout << "y: " << y << std::endl; // Saída: 6
+
+  return 0;
+}
+```
+Nesse exemplo, o pré-incremento `++x` é aplicado à variável `x` antes de atribuir seu valor à variável `y`. Como resultado, tanto `x` quanto `y` se tornam 6.
+
+Exemplo de pós-incremento:
+```C++
+#include <iostream>
+
+int main() {
+  int x = 5;
+  int y = x++;
+
+  std::cout << "x: " << x << std::endl; // Saída: 6
+  std::cout << "y: " << y << std::endl; // Saída: 5
+
+  return 0;
+}
+```
+Nesse exemplo, o pós-incremento `x++` é aplicado à variável `x` após atribuir seu valor à variável `y`. Como resultado, `x` se torna 6, mas `y` retem o valor original de `x`, que é 5.
+
+## Decremento:
++ Pré-decremento (--variavel): Diminui o valor da variável em 1 antes de qualquer outra operação.
++ Pós-decremento (variavel--): Diminui o valor da variável em 1 após a operação atual.
+
+Exemplo de pré-decremento:
+```C++
+#include <iostream>
+
+int main() {
+  int x = 5;
+  int y = --x;
+
+  std::cout << "x: " << x << std::endl; // Saída: 4
+  std::cout << "y: " << y << std::endl; // Saída: 4
+
+  return 0;
+}
+```
+Nesse exemplo, o pré-decremento `--x` é aplicado à variável `x` antes de atribuir seu valor à variável `y`. Como resultado, tanto `x` quanto `y` se tornam 4.
+
+Exemplo de pós-decremento:
+```C++
+#include <iostream>
+
+int main() {
+  int x = 5;
+  int y = x--;
+
+  std::cout << "x: " << x << std::endl; // Saída: 4
+  std::cout << "y: " << y << std::endl; // Saída: 5
+
+  return 0;
+}
+```
+Nesse exemplo, o pós-decremento `x--` é aplicado à variável `x` após atribuir seu valor à variável `y`. Como resultado, `x` se torna 4, mas `y` retém o valor original de `x`, que é 5.
+
+Os operadores de incremento e decremento são úteis para várias tarefas, como incrementar ou decrementar índices de loops, atualizar contadores e realizar cálculos baseados em contagem. Eles são especialmente convenientes em loops, pois permitem alterar o valor de uma variável de controle com facilidade.
+
+Lembre-se de usá-los com cuidado e garantir que seu uso seja claro e compreensível no contexto do seu código.
