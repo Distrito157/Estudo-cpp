@@ -171,3 +171,39 @@ Nesse exemplo, o pós-decremento `x--` é aplicado à variável `x` após atribu
 Os operadores de incremento e decremento são úteis para várias tarefas, como incrementar ou decrementar índices de loops, atualizar contadores e realizar cálculos baseados em contagem. Eles são especialmente convenientes em loops, pois permitem alterar o valor de uma variável de controle com facilidade.
 
 Lembre-se de usá-los com cuidado e garantir que seu uso seja claro e compreensível no contexto do seu código.
+
+# Constantes
+Em C++, existem duas formas principais de definir constantes: com a palavra-chave `const` e com a diretiva `#define`.
+## Constantes definidas com `const`:
++ A palavra-chave `const` é usada para definir constantes com tipo de dado.
++ Essas constantes são conhecidas como constantes simbólicas.
++ Exemplo:
+```C++
+const int idade = 25;
+const double pi = 3.1415;
+const std::string nome = "João";
+```
++ Nesse exemplo, `idade` é uma constante inteira, `pi` é uma constante de ponto flutuante e `nome` é uma constante de string.
++ Essas constantes possuem tipo de dado e ocupam espaço na memória durante a execução do programa.
++ Elas são úteis quando você deseja definir valores que não serão modificados posteriormente.
+
+## Constantes definidas com `#define`:
++ A diretiva `#define` é usada para criar macros de substituição de texto.
++ Elas não possuem tipo de dado e são substituições simples de texto.
++ Exemplo: 
+```C++
+#define PI 3.1415
+#define SAUDACAO "Olá, mundo!"
+#define TEXTO std::cout << "Oi, tudo bem" << endl
+```
++ Nesse exemplo, `PI` é uma macro definida como `3.1415` e `SAUDACAO` é uma macro definida como `"Olá, mundo!"`.
++ Durante a compilação, todas as ocorrências de `PI` serão substituidas por `3.1415` e todas as ocorrências de `SAUDACAO` serão substituidas por `"Olá, mundo!"`.
++ As macros `#define` não possuem tipo de dado e não ocupam espaço na memória durante a execução do programa.
+
+A principal diferença entre as constantes definidas com `const` e as macros `#define` é que as constantes `const` t^em tipo de dado e podem ser utilizadas com mais segurança, pois são verificadas pelo compilador quanto ao seu uso correto.
+
+As constantes simbólicas definidas com `const` são mais comumente usadas em C++ devido à sua capacidade de manter o tipo de dado e oferecer maior segurança e legibilidade ao código.
+
+É importante lembrar que as constantes em C++ devem ter nomes significativos, seguindo as convenções de nomenclatura da linguagem, para tornar o código mais compreensível e facilitar a manutenção futura.
+
+Em resumo, as constantes em C++ são usadas para definir valores fixos que não serão alterados durante a execução do programa. Elas podem ser definidas com a palavra-chave `const` para constantes simbólicas com tipo de dado ou com a diretiva `#define` para macros de substituição de texto.
