@@ -45,3 +45,51 @@ Também é possível modificar o valor de uma variável depois de declará-la, a
 
 Essas são apenas algumas informações básicas sobre variáveis e tipos de dados em C++. À medida que você avança no aprendizado, você encontrará tipos de dados mais avançados e poderá criar suas próprias classes e estruturas personalizadas. É recomendável consultar recursos adicionais e praticar para aprofundar seu conhecimento em C++.
 
+# Variáveis globais em C++:
++ As variáveis globais em C++ são declaradas fora de qualquer função, no escopo global do programa.
++ Elas podem ser acessadas e modificadas em qualquer parte do programa, assim como em outras linguagens de programação.
++ Para declarar uma variável global, você a define fora de qualquer função, geralmente no início do arquivo de código-fonte.
++ Exemplo:
+```C++
+#include <iostream>
+
+int globalVariable = 10;
+
+void modifyGlobalVariable() {
+    globalVariable = 20;
+    std::cout << globalVariable << std::endl;
+}
+
+int main() {
+    std::cout << globalVariable << std::endl; // Saída: 10
+    modifyGlobalVariable(); // Saída: 20
+    std::cout << globalVariable << std::endl; // Saída: 20
+
+    return 0;
+}
+```
+# Variáveis locais em C++:
++ Em C++, as variáveis locais são declaradas dentro de um bloco de código, como uma função, loop ou bloco condicional.
++ Elas são visiveis apenas dentro do escopo em que foram declaradas e não podem ser acessadas fora desse escopo.
++ Quando o escopo termina, as variáveis locais são destruídas.
++ Exemplo:
+```C++
+#include <iostream>
+
+int calculateSum() {
+    int localVariable = 10;
+    int anotherLocalVariable = 20;
+    int sum = localVariable + anotherLocalVariable;
+    return sum;
+}
+
+int main() {
+    std::cout << calculateSum() << std::endl; // Saída: 30
+    //std::cout << localVariable << std::endl; // Erro: localVariable não está definida
+
+    return 0;
+}
+```
+Em resumo, as variáveis globais em C++ são declaradas fora de qualquer função e podem ser acessadas e modificadas em todo o programa. As variáveis locais são declaradas dentro de um bloco de código e são visiveis apenas dentro desse bloco.
+
+Lembre-se de que o uso excessivo de variáveis globais pode dificultar a depuração e a manutenção do código, tornando-o mais propenso a erros e menos modular. É recomendado utiliz variáveis locais sempre que possível e limitar o escopo das variáveis ao mínimo necessário.
