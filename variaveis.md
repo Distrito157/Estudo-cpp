@@ -207,3 +207,34 @@ As constantes simbólicas definidas com `const` são mais comumente usadas em C+
 É importante lembrar que as constantes em C++ devem ter nomes significativos, seguindo as convenções de nomenclatura da linguagem, para tornar o código mais compreensível e facilitar a manutenção futura.
 
 Em resumo, as constantes em C++ são usadas para definir valores fixos que não serão alterados durante a execução do programa. Elas podem ser definidas com a palavra-chave `const` para constantes simbólicas com tipo de dado ou com a diretiva `#define` para macros de substituição de texto.
+
+# Inversão de valores em variáveis
+Para inverter o valor de uma variável em C++, você pode utilizar uma variável auxiliar para armazenar temporiamente o valor original e, em seguida, atribuir o valor invertido à variável original. Existem várias maneiras de realizar essa inversão, dependendo do tipo de dado da variável.
+## Inversão de variáveis numéricas:
+```C++
+int x = 10;
+int aux = x;
+x = -x;
+// Agora x terá o valor -10
+// ou
+x = x * -1;
+```
+Nesse exemplo, o valor original de `x` é armazenado em `aux`. Em seguida, o valor de `x` é invertido multiplicando-o por -1.
+
+## Inversão de variáveis booleanas:
+```C++
+bool condicao = true;
+condicao = !condicao;
+// Agora condicao terá o valor false
+```
+Nesse exemplo, o operador lógico NOT(`!`) é usado para inverter o valor booleano de `condicao`.
+
+## Inversão de variáveis de caracteres:
+```C++
+char c = 'A';
+c = ~c;
+// Agora c terá o valor 64 em ASCII (complemento de bit)
+```
+Nesse exemplo, o operador NOT(`~`) é usado para inverter cada bit do valor caractere `c`. Isso é aplicável ao conjunto de caracteres ASCII.
+
+Lembre-se de que a maneira de inverter valores de variáveis pode variar dependendo do tipo de dado. Além disso, considere as restrições e comportamentos específicos do tipo de dado ao realizar operações de inversão.
