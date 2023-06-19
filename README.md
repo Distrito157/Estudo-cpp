@@ -25,28 +25,27 @@ As funções ajudam a modularizar o código e facilitam a manutenção e a reuti
 Para mais informações: [Funções](funcoes.md)
 
 # Arrays
-5. **Arrays:** Arrays são coleções de elmentos do mesmo tipo de dado, Eles permitem armazenar
+5. **Arrays:** Arrays são coleções de elementos do mesmo tipo de dado, Eles permitem armazenar
 múltiplos valores em uma única variável.
 Os elementos do array são acessados usando um índice numérico.
+Para mais informações: [Arrays](arrays.md)
 
 # Ponteiros
 6. **Ponteiros:** Ponteiros são variáveis especiais que armazenam endereços de memória. Eles
 permitem manipular e acessar diretamente a memória do computador. Os ponteiros são amplamente
 usados em C++ para manipular arrays, criar estruturas de dados dinâmicas e trabalhar com alocação de
 memória.
+Para mais informações: [Ponteiros](ponteiros.md)
 
 # Entrada e saída
 7. **Entrada e saída:** C++ possui recursos para entrada e saída de dados. A biblioteca `<iostream>` fornece
 objetos como `cin` e `cout` para ler e exibir dados na tela. Esses recursos são usados para interagir
 com o usuário e exibir resultados do programa.
-
-# Escopo
-8. **Escopo:** O escopo em C++ refere-se à visibilidade e à vida útil das variáveis. Variáveis declaradas
-em diferentes partes do código têm escopos diferentes, e sua vida útil é limitada ao escopo em que
-foram declaradas.
+Para mais informações: [Entrada e saída](entradasaida.md)
 
 # Classes e objetos
-9. **Classes e objetos**: C++ é uma linguagem de programação orientada a objetos, permitindo a criação
+8. **Classes e objetos**: C++ é uma linguagem de programação orientada a objetos, permitindo a criação
 de classes e objetos. As classes são estruturas que encapsulam dados e comportamentos relacionados. Os
 objetos são instâncias das classes, que podem ser criados e utilizados para interagir com os dados e
 métodos da classe.
+Para mais informações [Classes e objetos](classeseobjetos.md)
