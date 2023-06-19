@@ -45,7 +45,7 @@ Neste exemplo, a função `somar` é chamada passando os valores de `x` e `y` co
 
 Esse é apenas um exemplo básico para ilustrar o conceito de função em C++. Funções podem ser mais complexas, com vários parâmetros, tipos de retorno diferentes e realizar tarefas mais avançadas. À medida que você ganha mais experiência em programação, poderá explorar recursos mais avançados, como funções com argumentos padrão, funções sobrecarregadas, funções recursivas, entre outros.
 
-# Parâmetros argc e argv da função main
+# <a name="argcargv"></a>Parâmetros argc e argv da função main
 Em C++, a função `main` é o ponto de entrada do programa. Ela pode receber dois parâmetros, `argc` e `argv`, que permitem passar informações da linha de comando para o programa.
 ## `argc` (Argument Count):
 + `argc` é um inteiro que representa o número de argumentos passados na linha de comando.
