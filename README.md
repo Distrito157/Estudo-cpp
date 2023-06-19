@@ -9,27 +9,27 @@
 + [Classes e objetos](#classeseobjetos)
 
 
-# <a name=""></a>Variáveis
+# <a name="variaveis"></a>Variáveis
 1. **Variáveis e tipos de dados:** Em C++, da para guardar dados declarando
 o tipo de variaveis e depois o valor a ser guardo:
 ponto flutuante(`float`, double), números inteiros(`int`),
 caracteres(`char`) e booleanos(`bool`).
 Para mais informações: [Variáveis e tipos de dados](variaveis.md)
 
-# <a name=""></a>Operadores
+# <a name="operadores"></a>Operadores
 2. **Operadores:** C++ oferece vários operadores para realizar operações em
 variaveis e valores: alguns exemplos de ops aritméticos: (como `+`, `-`, `*`, `/`).
 Operadores de comparação: (como `==`, `!=`, `<`, `>`, `<=`, `>=`).
 Operadores lógicos(como `&&`, `||`, `!` ou `and`, `or`, `not`) e operadores de atribuição(como `=`).
 Para mais informações: [Operadores](operadores.md)
 
-# <a name=""></a>Estruturas de controle
+# <a name="estruturas"></a>Estruturas de controle
 3. **Estruturas de controle:** C++ possui estruturas de controle, como condicionais:
 (`if`, `else`, `switch`) e loops (`for`, `while`, `do-while`), que permitem controlar o fluxo de
 execução do programa com base em determinadas condições.
 Para mais informações: [Estruturas de controle](estruturasControle.md)
 
-# <a name=""></a>Funções
+# <a name="funcoes"></a>Funções
 4. **Funções:** As funções em C++ permitem agrupar blocos de código reutilizáveis.
 Elas podem receber argumentos (parâmetros), realizar um processamento e retornar um valor.
 As funções ajudam a modularizar o código e facilitam a manutenção e a reutilização.
