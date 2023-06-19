@@ -1,11 +1,11 @@
 # Índice
 + [Introdução](#introducao)
-+ [Tipos de dados](#tiposDeDados)
-+ [Variáveis globais](#variaveisGlobais)
-+ [Variáveis locais](#variaveisLocais)
-+ [Incremento e decremento de variáveis](#incrementoDecremento)
++ [Tipos de dados](#tiposdedados)
++ [Variáveis globais](#variaveisglobais)
++ [Variáveis locais](#variaveislocais)
++ [Incremento e decremento de variáveis](#incrementodecremento)
 + [Constantes](#constantes)
-+ [Inversão de valores em variáveis](#inversaoDeValores)
++ [Inversão de valores em variáveis](#inversaodevalores)
 + [Arrays](#arrays)
 
 # <a name="introducao"></a>Introdução
@@ -14,7 +14,7 @@ Antes de usar uma variável, você precisa declará-la, especificando seu tipo d
 um nome único. Os tipos de dados determinam a natureza dos valores que a variável pode
 armazenar e as operações que podem ser realizadas sobre esses valores.
 
-# <a name="tiposDeDados"></a>Aqui estão alguns dos tipos de dados básicos em C++:
+# <a name="tiposdedados"></a>Aqui estão alguns dos tipos de dados básicos em C++:
 **Inteiros:** O tipo `int` é usado para armazenar números inteiros. Ele pode representar valores positivos,
 negativos e zero. Por exemplo:
 ```C++
@@ -55,7 +55,7 @@ Também é possível modificar o valor de uma variável depois de declará-la, a
 
 Essas são apenas algumas informações básicas sobre variáveis e tipos de dados em C++. À medida que você avança no aprendizado, você encontrará tipos de dados mais avançados e poderá criar suas próprias classes e estruturas personalizadas. É recomendável consultar recursos adicionais e praticar para aprofundar seu conhecimento em C++.
 
-# <a name="variaveisGlobais"></a>Variáveis globais em C++:
+# <a name="variaveisglobais"></a>Variáveis globais em C++:
 + As variáveis globais em C++ são declaradas fora de qualquer função, no escopo global do programa.
 + Elas podem ser acessadas e modificadas em qualquer parte do programa, assim como em outras linguagens de programação.
 + Para declarar uma variável global, você a define fora de qualquer função, geralmente no início do arquivo de código-fonte.
@@ -78,7 +78,7 @@ int main() {
     return 0;
 }
 ```
-# <a name="variaveisLocais"></a>Variáveis locais em C++:
+# <a name="variaveislocais"></a>Variáveis locais em C++:
 + Em C++, as variáveis locais são declaradas dentro de um bloco de código, como uma função, loop ou bloco condicional.
 + Elas são visiveis apenas dentro do escopo em que foram declaradas e não podem ser acessadas fora desse escopo.
 + Quando o escopo termina, as variáveis locais são destruídas.
@@ -104,7 +104,7 @@ Em resumo, as variáveis globais em C++ são declaradas fora de qualquer funçã
 
 Lembre-se de que o uso excessivo de variáveis globais pode dificultar a depuração e a manutenção do código, tornando-o mais propenso a erros e menos modular. É recomendado utiliz variáveis locais sempre que possível e limitar o escopo das variáveis ao mínimo necessário.
 
-# <a name="incrementoDecremento"></a>Incremento e decremento de variáveis:
+# <a name="incrementodecremento"></a>Incremento e decremento de variáveis:
 Em C++, os operadores de incremento e decremento são usados para aumentar ou diminuir o valor de uma variável por um determinado número. Esses operadores têm duas formas: `pré-incremento/pre-decremento` e `pós-incremento/pós-decremento.`
 ## Incremento:
 + pré-incremento (++variavel): Aumenta o valor da variável em 1 antes de qualquer outra operação.
@@ -218,7 +218,7 @@ As constantes simbólicas definidas com `const` são mais comumente usadas em C+
 
 Em resumo, as constantes em C++ são usadas para definir valores fixos que não serão alterados durante a execução do programa. Elas podem ser definidas com a palavra-chave `const` para constantes simbólicas com tipo de dado ou com a diretiva `#define` para macros de substituição de texto.
 
-# <a name="inversaoDeValores"></a>Inversão de valores em variáveis
+# <a name="inversaodevalores"></a>Inversão de valores em variáveis
 Para inverter o valor de uma variável em C++, você pode utilizar uma variável auxiliar para armazenar temporiamente o valor original e, em seguida, atribuir o valor invertido à variável original. Existem várias maneiras de realizar essa inversão, dependendo do tipo de dado da variável.
 ## Inversão de variáveis numéricas:
 ```C++
