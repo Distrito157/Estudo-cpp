@@ -9,7 +9,7 @@ As estruturas condicionais permitem executar diferentes trechos de código com b
 A estrutura `if` verifica uma condição e executa um bloco de código se a condição for verdadeira. Ela permite que você tome decisões com base em certas condições.
 
 Aqui está a sintaxe básica do `if`:
-```C++
+```c++
 if (condicao) {
     // bloco de código a ser executado se a condição for verdadeira
 }
@@ -19,7 +19,7 @@ if (condicao) {
 + Após a condição, você abre um bloco de código entre chaves `{}`. Esse bloco de código será executado somente se a condição for verdadeira.
 
 Você também pode usar a palavra-chave `else` para executar um bloco de código alternativo caso a condição do `if` seja falsa:
-```C++
+```c++
 if (condicao) {
     // bloco de código a ser executado se a condição for verdadeira
 } else {
@@ -32,7 +32,7 @@ if (condicao) {
 A estrutura `switch` é usada quando há múltiplas opções e você deseja executar diferentes ações com base em um valor específico. Ela oferece uma forma mais compacta de lidar com múltiplas condições.
 
 Aqui está a sintaxe básica do `switch`:
-```C++
+```c++
 switch (expressao) {
     case valor1:
         // bloco de código a ser executado se a expressão for igual a valor1
@@ -59,7 +59,7 @@ As estruturas de repetição permitem executar um bloco de código várias vezes
 A estrutura `while` executa um bloco de código repetidamente enquanto uma condição for verdadeira.
 
 Aqui está a sintaxe básica do `while`:
-```C++
+```c++
 while (condicao) {
     // bloco de código a ser repetido enquanto a condição for verdadeira
 }
@@ -72,7 +72,7 @@ while (condicao) {
 A estrutura `do-while` é semelhante ao `while`, mas garante que o bloco de código seja executado pelo menos uma vez, mesmo que a condição seja falsa.
 
 Aqui está a sintaxe básica do `do-while`:
-```C++
+```c++
 do {
     // bloco de código a ser repetido
 } while (condicao);
@@ -85,7 +85,7 @@ do {
 A estrutura `for` permite executar um bloco de código repetidamente por um número específico de vezes.
 
 Aqui está a sintaxe básica do `for`:
-```C++
+```c++
 for (inicializacao; condicao; atualizacao) {
     // bloco de código a ser repetido
 }

@@ -6,7 +6,7 @@
 Em C++, uma função é um bloco de código que é definido uma vez e pode ser chamado (ou invocado) várias vezes durante a execução do programa. As funções ajudam a organizar e reutilizar o código, permitindo que você divida tarefas em partes menores e mais gerenciáveis.
 
 Vamos analisar a estrutura básica de uma função em C++:
-```C++
+```c++
 tipo_retorno nome_da_funcao(parâmetros) {
     // Corpo da função (bloco de código)
     // Pode incluir declarações de variáveis, comandos, expressões, etc.
@@ -23,7 +23,7 @@ Aqui está uma explicação detalhada de cada elemento:
 + **valor_retorno**: é o valor que a função retorna. Se a função tiver um tipo de retorno diferente de `void`, você deve usar a palavra-chave return seguida pelo valor que deseja retornar. O valor de retorno deve ser do tipo especificado pelo tipo de retorno da função.
 
 Vejamos um exemplo de função simples que calcula a soma de dois números:
-```C++
+```c++
 int somar(int a, int b) {
     int resultado = a + b;
     return resultado;
@@ -32,7 +32,7 @@ int somar(int a, int b) {
 Neste exemplo, a função chamada somar recebe dois parâmetros `a` e `b`, ambos do tipo `int`. Ela realiza a operação de soma e armazena o resultado na variável `resultado`. Em seguida, retorna o valor resultante usando a instrução `return`.
 
 Para chamar (ou invocar) a função, você pode usá-la em qualquer parte do seu programa. Veja o exemplo abaixo:
-```C++
+```c++
 int main() {
     int x = 5;
     int y = 3;
@@ -60,7 +60,7 @@ Em C++, a função `main` é o ponto de entrada do programa. Ela pode receber do
 + O último elemento de `argv` é um ponteiro nulo (`nullptr`), indicando o fim do array.
 + Por exemplo, se você executar o programa com o comando `./meu_programa arg1 arg2`, `argv` será um array contendo: `{"./meu_programa", "arg1", "arg2", nullptr}`.
 Aqui está um exemplo de uso dos parâmetros `argc` e `argv` na função `main`:
-```C++
+```c++
 #include <iostream>
 
 int main(int argc, char* argv[]) {
@@ -78,7 +78,7 @@ Neste exemplo, o programa exibe o número de argumentos(`argc`) e, em seguida, e
 Ao executar o programa com alguns argumentos na linha de comando, você verá a contagem e a lista dos argumentos passados.
 
 Por exemplo, ao executar o programa com o comando `./meu_programa arg1 arg2`, você pode obter a seguinte saída:
-```YAML
+```yaml
 Número de argumentos: 3
 Argumento 0: ./meu_programa
 Argumento 1: arg1

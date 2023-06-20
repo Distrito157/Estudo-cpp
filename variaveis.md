@@ -16,37 +16,37 @@ armazenar e as operações que podem ser realizadas sobre esses valores.
 # <a name="tiposdedados"></a>Aqui estão alguns dos tipos de dados básicos em C++:
 **Inteiros:** O tipo `int` é usado para armazenar números inteiros. Ele pode representar valores positivos,
 negativos e zero. Por exemplo:
-```C++
+```c++
 int idade = 20;
 ```
 **Ponto Flutuante:** Existem dois tipos principais de números de ponto flutuante em C++: `float` e `double`.
 O tipo `float` é usado para números de ponto flutuante de precisão simples, enquanto o tipo `double` é usado para
 números de ponto flutuante de dupla precisão, que são mais precisos. Por exemplo:
-```C++
+```c++
 float altura = 1.75;
 double peso = 68.5;
 ```
 **Caracteres:** O tipo `char` é usado para armazenar caracteres individuais. Um caractere é representado
 entre aspas simples (`'`). Por exemplo:
-```C++
+```c++
 char genero = 'M';
 ```
 **Booleanos:** O tipo `bool` é usado para representar valores booleanos, ou seja, verdadeiro ou falso.
 O valor `true` representa verdadeiro, enquanto o valor `false` representa falso. Por exemplo:
-```C++
+```c++
 bool temCarro = true; // true = 1
 bool temLancha = false; // false = 0
 ```
 **Strings:** Embora C++ não tenha um tipo de dado de string embutido, você pode usar a classe `std::string`
 do C++ Standartd Library para trabalhar com strings. Uma string é uma sequência de caracteres. Por exemplo:
-```C++
+```c++
 std::string nome = "João";
 ```
 
 Além desses tipos básicos, C++ também oferece tipos de dados compostos, como arrays, estruturas, enums e classes, que permitem armazenar e manipular coleções de valores relacionados.
 
 É importante observar que em C++, é uma prática recomendada inicializar as variáveis quando são declaradas. Isso pode ser feito atribuindo um valor inicial na declaração da variável. Por exemplo:
-```C++
+```c++
 int numero = 10;
 ```
 
@@ -59,7 +59,7 @@ Essas são apenas algumas informações básicas sobre variáveis e tipos de dad
 + Elas podem ser acessadas e modificadas em qualquer parte do programa, assim como em outras linguagens de programação.
 + Para declarar uma variável global, você a define fora de qualquer função, geralmente no início do arquivo de código-fonte.
 + Exemplo:
-```C++
+```c++
 #include <iostream>
 
 int globalVariable = 10;
@@ -82,7 +82,7 @@ int main() {
 + Elas são visiveis apenas dentro do escopo em que foram declaradas e não podem ser acessadas fora desse escopo.
 + Quando o escopo termina, as variáveis locais são destruídas.
 + Exemplo:
-```C++
+```c++
 #include <iostream>
 
 int calculateSum() {
@@ -110,7 +110,7 @@ Em C++, os operadores de incremento e decremento são usados para aumentar ou di
 + Pós-incremento (variavel++): Aumenta o valor da variável em 1 após a operação atual.
 
 Exemplo de pré-incremento:
-```C++
+```c++
 #include <iostream>
 
 int main() {
@@ -126,7 +126,7 @@ int main() {
 Nesse exemplo, o pré-incremento `++x` é aplicado à variável `x` antes de atribuir seu valor à variável `y`. Como resultado, tanto `x` quanto `y` se tornam 6.
 
 Exemplo de pós-incremento:
-```C++
+```c++
 #include <iostream>
 
 int main() {
@@ -146,7 +146,7 @@ Nesse exemplo, o pós-incremento `x++` é aplicado à variável `x` após atribu
 + Pós-decremento (variavel--): Diminui o valor da variável em 1 após a operação atual.
 
 Exemplo de pré-decremento:
-```C++
+```c++
 #include <iostream>
 
 int main() {
@@ -162,7 +162,7 @@ int main() {
 Nesse exemplo, o pré-decremento `--x` é aplicado à variável `x` antes de atribuir seu valor à variável `y`. Como resultado, tanto `x` quanto `y` se tornam 4.
 
 Exemplo de pós-decremento:
-```C++
+```c++
 #include <iostream>
 
 int main() {
@@ -187,7 +187,7 @@ Em C++, existem duas formas principais de definir constantes: com a palavra-chav
 + A palavra-chave `const` é usada para definir constantes com tipo de dado.
 + Essas constantes são conhecidas como constantes simbólicas.
 + Exemplo:
-```C++
+```c++
 const int idade = 25;
 const double pi = 3.1415;
 const std::string nome = "João";
@@ -200,7 +200,7 @@ const std::string nome = "João";
 + A diretiva `#define` é usada para criar macros de substituição de texto.
 + Elas não possuem tipo de dado e são substituições simples de texto.
 + Exemplo: 
-```C++
+```c++
 #define PI 3.1415
 #define SAUDACAO "Olá, mundo!"
 #define TEXTO std::cout << "Oi, tudo bem" << endl
@@ -220,7 +220,7 @@ Em resumo, as constantes em C++ são usadas para definir valores fixos que não 
 # <a name="inversaodevalores"></a>Inversão de valores em variáveis
 Para inverter o valor de uma variável em C++, você pode utilizar uma variável auxiliar para armazenar temporiamente o valor original e, em seguida, atribuir o valor invertido à variável original. Existem várias maneiras de realizar essa inversão, dependendo do tipo de dado da variável.
 ## Inversão de variáveis numéricas:
-```C++
+```c++
 int x = 10;
 int aux = x;
 x = -x;
@@ -231,7 +231,7 @@ x = x * -1;
 Nesse exemplo, o valor original de `x` é armazenado em `aux`. Em seguida, o valor de `x` é invertido multiplicando-o por -1.
 
 ## Inversão de variáveis booleanas:
-```C++
+```c++
 bool condicao = true;
 condicao = !condicao;
 // Agora condicao terá o valor false
@@ -239,7 +239,7 @@ condicao = !condicao;
 Nesse exemplo, o operador lógico NOT(`!`) é usado para inverter o valor booleano de `condicao`.
 
 ## Inversão de variáveis de caracteres:
-```C++
+```c++
 char c = 'A';
 c = ~c;
 // Agora c terá o valor 64 em ASCII (complemento de bit)

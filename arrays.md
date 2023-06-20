@@ -7,7 +7,7 @@
 Um array em C++ é uma estrutura de dados que armazena uma coleção de elementos do mesmo tipo em uma sequência contigua de memória. Os arrays têm um tamanho fixo, determinado durante a sua declaração, e cada elemento do array pode ser acessado através de um indice.
 
 Aqui está um exemplo simples de declaração e uso de um array de inteiros em C++:
-```C++
+```c++
 #include <iostream>
 
 int main() {
@@ -36,7 +36,7 @@ Nesse exemplo, declaramos um array de inteiros chamado "numeros" com tamanho 5. 
 Em seguida, exibimos os valores dos elementos do array usando a função `cout` para impressão no console.
 
 Saída esperada:
-```YAML
+```yaml
 Elemento 0: 10
 Elemento 1: 20
 Elemento 2: 30
@@ -46,7 +46,7 @@ Elemento 4: 50
 É importante observar que o indice de um array em C++ deve estar dentro dos limites do tamanho declarado. Se tentarmos acessar ou atribuir um valor fora dos limites do array, podemos obter um comportamento indefinido ou um erro de tempo de execução.
 
 Além disso, podemos usar loops, como o `for`, para percorrer os elementos de um array:
-```C++
+```c++
 int numeros[5] = {10, 20, 30, 40, 50};
 
 // Usando um loop para exibir os elementos do array
@@ -57,7 +57,7 @@ for (int i = 0; i < 5; i++) {
 Nesse exemplo, inicializamos o array `numeros` com os valores durante a declaração. Em seguida, usamos um loop `for` para iterar sobre os elementos do array e exibir seus valores.
 
 Saída esperada:
-```YAML
+```yaml
 Elemento 0: 10
 Elemento 1: 20
 Elemento 2: 30
@@ -70,7 +70,7 @@ Esses exemplos ilustram o uso básico de arrays em C++. Eles são úteis para ar
 Um array bidimensional em C++ é uma estrutura de dados que armazena elementos em uma grade de duas dimensões. Ele é composto por linhas e colunas, formando uma matriz retangular. Cada elemento da matriz é acessado através de um par de indices, um para a linha e outro para a coluna.
 
 Aqui está um exemplo simples de declaração e uso de uma matriz de inteiros em C++:
-```C++
+```c++
 #include <iostream>
 
 int main() {
@@ -113,7 +113,7 @@ Neste exemplo, declaramos uma matriz de inteiros chamada "matriz" com 3 linhas e
 Em seguida, exibimos os valores dos elementos da matriz usando a função `cout` para impressão no console.
 
 Saída esperada:
-```YAML
+```yaml
 Elemento [0][0]: 1
 Elemento [0][1]: 2
 Elemento [0][2]: 3
@@ -128,7 +128,7 @@ Elemento [2][2]: 11
 Elemento [2][3]: 12
 ```
 Uma forma conveniente de inicializar uma matriz é usar uma lista de inicialização:
-```C++
+```c++
 int matriz[3][4] = {
   {1, 2, 3, 4},
   {5, 6, 7, 8},
@@ -138,7 +138,7 @@ int matriz[3][4] = {
 Nesse exemplo declaramos e inicializamos uma matriz de inteiros com os mesmos valores do exemplo anterior. As chaves `{}` internas representam as linhas da matriz, e os valores separados por vírgulas representam os elementos de cada linha.
 
 Os arrays bidimensionais são úteis para armazenar e manipular dados estruturados em forma de grade, como matrizes, tabuleiros de jogos, dados tabulares, imagens e muito mais. Você pode realizar operações, como iteração e cálculos, usando loops aninhados para percorrer as linhas e colunas da matriz.
-```C++
+```c++
 // Iteração sobre os elementos da matriz
 for (int i = 0; i < 3; i++) {
   for (int j = 0; j < 4; j++) {
@@ -149,7 +149,7 @@ for (int i = 0; i < 3; i++) {
 Nesse exemplo, usamos dois loops `for` aninhados para percorrer todos os elementos da matriz. A cada iteração, exibimos o valor do elemento e seus índices.
 
 Saída esperada:
-```YAML
+```yaml
 Elemento [0][0]: 1
 Elemento [0][1]: 2
 Elemento [0][2]: 3
@@ -170,7 +170,7 @@ A manipulação de arrays é uma habilidade fundamental na programação, e pode
 
 ## Acesso aos Elementos:
 Os elementos de um array podem ser acessados usando o operador de índice `[]`, que permite especificar a posição do elemento desejado. O índice começa em 0 para o primeiro elemento. Por exemplo:
-```C++
+```c++
 int numeros[5] = {1, 2, 3, 4, 5};
 
 int primeiroElemento = numeros[0]; // Acessa o primeiro elemento (valor 1)
@@ -178,14 +178,14 @@ int segundoElemento = numeros[1]; // Acessa o segundo elemento (valor 2)
 ```
 ## Modificação de elementos:
 Os elementos de um array podem ser modificados atribuindo um novo valor a eles usando o operador de atribuição `=`. Por exemplo:
-```C++
+```c++
 int numeros[3] = {10, 20, 30};
 
 numeros[1] = 25; // Modifica o segundo elemento para 25
 ```
 ## Iteração sobre um Array:
 Para percorrer todos os elementos de um array, é comum usar loops, como o `for` ou `while`. Você pode usar um contador para percorrer os índices do array e acessar os elementos correspondentes. Por exemplo:
-```C++
+```c++
 int numeros[5] = {1, 2, 3, 4, 5};
 
 for (int i = 0; i < 5; i++) {
@@ -200,7 +200,7 @@ A biblioteca padrão do C++ oferece funções e recursos para auxiliar na manipu
 
 ## Arrays Multidimensionais:
 Além dos arrays unidimensionais, é possível criar arrays multidimensionais, como matrizes. Um array bidimensional é basicamente um array de arrays. Por exemplo:
-```C++
+```c++
 int matriz[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 ```
 
