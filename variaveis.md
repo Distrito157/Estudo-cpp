@@ -59,7 +59,7 @@ Essas são apenas algumas informações básicas sobre variáveis e tipos de dad
 + Elas podem ser acessadas e modificadas em qualquer parte do programa, assim como em outras linguagens de programação.
 + Para declarar uma variável global, você a define fora de qualquer função, geralmente no início do arquivo de código-fonte.
 + Exemplo:
-```c++
+```cpp
 #include <iostream>
 
 int globalVariable = 10;
