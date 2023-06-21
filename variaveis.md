@@ -6,6 +6,7 @@
 + [Incremento e decremento de variáveis](#incrementodecremento)
 + [Constantes](#constantes)
 + [Inversão de valores em variáveis](#inversaodevalores)
++ [Concatenação de Strings](#concatenastring)
 
 # <a name="introducao"></a>Introdução
 Em C++, as variáveis são usadas para armazenar valores na memória do computador.
@@ -247,3 +248,89 @@ c = ~c;
 Nesse exemplo, o operador NOT(`~`) é usado para inverter cada bit do valor caractere `c`. Isso é aplicável ao conjunto de caracteres ASCII.
 
 Lembre-se de que a maneira de inverter valores de variáveis pode variar dependendo do tipo de dado. Além disso, considere as restrições e comportamentos específicos do tipo de dado ao realizar operações de inversão.
+
+# <a name="concatenastring"></a>Concatenação de Strings:
+A concatenação de strings é o processo de combinar duas ou mais strings em uma única string. Em C++, você pode usar o operador de adição (+) ou o método `append()` para realizar a concatenação de strings. Aqui estão exemplos de ambos os métodos:
+
+1. Utilizando o operador de adição (+):
+```cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string str1 = "Hello";
+    string str2 = " World!";
+    string str3 = str1 + str2;
+    
+    cout << "Resultado: " << str3 << endl;
+    
+    return 0;
+}
+```
+Neste exemplo, usamos o operador de adição (+) para concatenar as strings `str1` e `str2`, armazenando o resultado na string `str3`.
+
+2. Utilizando o método `append()`:
+```cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string str1 = "Hello";
+    string str2 = " World!";
+    string str3 = str1;
+    str3.append(str2);
+    
+    cout << "Resultado: " << str3 << endl;
+    
+    return 0;
+}
+```
+Neste exemplo, usamos o método `append()` para adicionar o conteúdo da string `str2` à string `str3`, que inicialmente contém o valor de `str1`.
+
+### Concatenação de Números com Strings:
+Além da concatenação de strings, você também pode concatenar números com strings em C++. No entanto, é necessário converter os números em formato de string antes de realizar a concatenação. Você pode fazer isso usando a função `to_string()` ou a biblioteca `sstream`. Aqui estão exemplos dos dois métodos:
+
+1. Utilizando a função `to_string()`:
+```cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    int num = 42;
+    string str = "O número é: " + to_string(num);
+    
+    cout << str << endl;
+    
+    return 0;
+}
+```
+Neste exemplo, usamos a função `to_string()` para converter o número `num` em uma string antes de concatená-lo com a outra string.
+
+1. Utilizando a biblioteca `sstream`:
+```cpp
+#include <iostream>
+#include <string>
+#include <sstream>
+
+using namespace std;
+
+int main() {
+    int num = 42;
+    stringstream ss;
+    ss << "O número é: " << num;
+    string str = ss.str();
+    
+    cout << str << endl;
+    
+    return 0;
+}
+```
+Neste exemplo, utilizamos a classe `stringstream` da biblioteca `sstream` para realizar a concatenação do número `num` com a string.
+
+Esses são os conceitos básicos e comuns para realizar a concatenação em C++. Lembre-se de que é importante converter os números em formato de string antes de realizar a concatenação.
