@@ -2,6 +2,7 @@
 + [Funções](#funcoes)
 + [Parâmetros argc e argv para a função main](#argcargv)
 + [Sobrecarga de funções](#sobrecargafuncao)
++ [Omissão de argumentos e argumentos padrão](#omissaoarg)
 
 # <a name="funcoes"></a>Funções
 Em C++, uma função é um bloco de código que é definido uma vez e pode ser chamado (ou invocado) várias vezes durante a execução do programa. As funções ajudam a organizar e reutilizar o código, permitindo que você divida tarefas em partes menores e mais gerenciáveis.
@@ -149,3 +150,52 @@ Nesse exemplo, temos duas funções chamadas `somar`, uma que recebe dois parâm
 
 
 A sobrecarga de funções em C++ é uma ferramenta poderosa que permite escrever código mais legível e flexível, permitindo que você reutilize nomes de função para diferentes propósitos, desde que os parâmetros sejam distintos o suficiente para o compilador diferenciá-los.
+
+# <a name="omissaoarg"></a>Omissão de argumentos e argumentos padrão
+A omissão de argumentos e os argumentos padrão são recursos relacionados que permitem definir valores padrão para os parâmetros de uma função. Essa técnica é útil quando você deseja fornecer valores padrão para alguns parâmetros, permitindo que sejam omitidos durante a chamada da função.
+
+Aqui está um exemplo simples que demonstra como usar argumentos padrão:
+```cpp
+#include <iostream>
+
+// Função que imprime uma mensagem com um nome
+void saudacao(std::string nome = "amigo") {
+  std::cout << "Olá, " << nome << "!" << std::endl;
+}
+
+int main() {
+  saudacao();         // Chama a função sem argumentos, usa o valor padrão "amigo"
+  saudacao("João");   // Chama a função com o argumento "João", substitui o valor padrão
+  
+  return 0;
+}
+```
+Neste exemplo, a função `saudacao` possui um parâmetro `nome` com um valor padrão definido como "amigo". Durante a chamada da função, se nenhum argumento for fornecido, o valor padrão será usado. No entanto, se um argumento for fornecido, ele substituirá o valor padrão.
+
+A omissão de argumentos também pode ser usada em conjunto com a sobrecarga de funções para fornecer diferentes conjuntos de argumentos padrão para diferentes versões da função. Veja o exemplo a seguir:
+```cpp
+#include <iostream>
+
+// Função que imprime uma mensagem com um nome
+void saudacao(std::string nome = "amigo") {
+  std::cout << "Olá, " << nome << "!" << std::endl;
+}
+
+// Sobrecarga da função saudacao com um parâmetro adicional
+void saudacao(std::string nome, std::string cumprimento) {
+  std::cout << cumprimento << ", " << nome << "!" << std::endl;
+}
+
+int main() {
+  saudacao();                           // Chama a primeira função, usa o valor padrão "amigo"
+  saudacao("João");                     // Chama a primeira função, substitui o valor padrão
+  saudacao("Maria", "Bom dia");         // Chama a segunda função, substitui os valores padrão
+  
+  return 0;
+}
+```
+Neste exemplo, temos duas versões da função `saudacao`. A primeira versão possui um parâmetro `nome` com um valor padrão "amigo". A segunda versão sobrecarrega a função adicionando um parâmetro `cumprimento`. Durante a chamada da função, o compilador determinará qual versão usar com base nos argumentos fornecidos.
+
+
+A omissão de argumentos e os argumentos padrão são recursos úteis em C++ para tornar as funções mais flexíveis e fornecer valores pré-definidos quando necessário, evitando a necessidade de fornecer valores para todos os parâmetros em todas as chamadas da função. Isso torna o código mais legível e permite uma maior reutilização de código.
+
