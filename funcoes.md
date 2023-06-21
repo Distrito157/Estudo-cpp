@@ -199,3 +199,4 @@ Neste exemplo, temos duas versões da função `saudacao`. A primeira versão po
 
 A omissão de argumentos e os argumentos padrão são recursos úteis em C++ para tornar as funções mais flexíveis e fornecer valores pré-definidos quando necessário, evitando a necessidade de fornecer valores para todos os parâmetros em todas as chamadas da função. Isso torna o código mais legível e permite uma maior reutilização de código.
 
+
