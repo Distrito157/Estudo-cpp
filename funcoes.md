@@ -172,7 +172,7 @@ int main() {
 ```
 Neste exemplo, a função `saudacao` possui um parâmetro `nome` com um valor padrão definido como "amigo". Durante a chamada da função, se nenhum argumento for fornecido, o valor padrão será usado. No entanto, se um argumento for fornecido, ele substituirá o valor padrão.
 
-A omissão de argumentos também pode ser usada em conjunto com a sobrecarga de funções para fornecer diferentes conjuntos de argumentos padrão para diferentes versões da função. Veja o exemplo a seguir:
+A omissão de argumentos também pode ser usada em conjunto com a [sobrecarga de funções](#sobrecargafuncao) para fornecer diferentes conjuntos de argumentos padrão para diferentes versões da função. Veja o exemplo a seguir:
 ```cpp
 #include <iostream>
 
