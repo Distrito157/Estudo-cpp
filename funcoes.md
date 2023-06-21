@@ -3,6 +3,7 @@
 + [Parâmetros argc e argv para a função main](#argcargv)
 + [Sobrecarga de funções](#sobrecargafuncao)
 + [Omissão de argumentos e argumentos padrão](#omissaoarg)
++ [Função recursiva](#funcrecursiva)
 
 # <a name="funcoes"></a>Funções
 Em C++, uma função é um bloco de código que é definido uma vez e pode ser chamado (ou invocado) várias vezes durante a execução do programa. As funções ajudam a organizar e reutilizar o código, permitindo que você divida tarefas em partes menores e mais gerenciáveis.
@@ -199,4 +200,31 @@ Neste exemplo, temos duas versões da função `saudacao`. A primeira versão po
 
 A omissão de argumentos e os argumentos padrão são recursos úteis em C++ para tornar as funções mais flexíveis e fornecer valores pré-definidos quando necessário, evitando a necessidade de fornecer valores para todos os parâmetros em todas as chamadas da função. Isso torna o código mais legível e permite uma maior reutilização de código.
 
+# <a name="funcrecursiva"></a>Função recursiva
+Uma função recursiva é uma função que chama a si mesma durante a sua execução. A recursividade é uma técnica poderosa que permite resolver problemas complexos dividindo-os em subproblemas menores e resolvendo cada subproblema de forma recursiva.
 
+Uma função recursiva normalmente possui dois componentes principais:
+
+1. Caso base (base case): É a condição de parada da recursão. É o cenário em que a função não faz mais chamadas recursivas e retorna um valor específico. Ele evita que a recursão ocorra indefinidamente, levando a um estouro de pilha (stack overflow). O caso base é essencial para garantir que a recursão tenha um fim.
+2. Caso recursivo (recursive case): É a parte da função em que ocorre a chamada recursiva. Nessa etapa, a função se chama novamente com uma entrada reduzida ou modificada do problema original. A recursão ocorre repetidamente até que o caso base seja alcançado.
+
+Aqui está um exemplo simples de uma função recursiva em C++ que calcula o fatorial de um número:
+```cpp
+int fatorial(int n) {
+    // Caso base: fatorial de 0 ou 1 é sempre 1
+    if (n == 0 || n == 1) {
+        return 1;
+    }
+    // Caso recursivo: chama a função recursivamente com n-1
+    return n * fatorial(n - 1);
+}
+```
+Neste exemplo, o caso base é quando `n` é igual a 0 ou 1, e a função retorna 1. No caso recursivo, a função se chama novamente com `n - 1` e multiplica o resultado pelo valor de `n`. Isso continua até que o caso base seja alcançado.
+
+Ao usar funções recursivas, é importante garantir que a recursão eventualmente alcance o caso base para evitar um loop infinito. Além disso, é importante pensar em como os parâmetros e resultados são passados entre as chamadas recursivas para garantir que a recursão esteja corretamente configurada.
+
+
+As funções recursivas são particularmente úteis para resolver problemas que podem ser divididos em subproblemas menores e que seguem uma estrutura recursiva. No entanto, o uso de recursão também pode levar a um desempenho inferior em comparação com abordagens iterativas para problemas simples, devido ao custo adicional de chamadas de função e pilha de execução. Portanto, é importante considerar a eficiência e a adequação da recursão para cada problema específico.
+
+**Link de uma vídeo aula explicativa**: [Funções recursivas](https://www.youtube.com/watch?v=KuipEEelnpU&list=PLx4x_zx8csUjczg1qPHavU1vw1IkBcm40&index=25&pp=iAQB)
+**Créditos**: Professor Bruno do canal [CFBCursos](https://www.youtube.com/@cfbcursos)
