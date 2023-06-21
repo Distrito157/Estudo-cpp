@@ -1,6 +1,7 @@
 # Índice
 + [Funções](#funcoes)
 + [Parâmetros argc e argv para a função main](#argcargv)
++ [Sobrecarga de funções](#sobrecargafuncao)
 
 # <a name="funcoes"></a>Funções
 Em C++, uma função é um bloco de código que é definido uma vez e pode ser chamado (ou invocado) várias vezes durante a execução do programa. As funções ajudam a organizar e reutilizar o código, permitindo que você divida tarefas em partes menores e mais gerenciáveis.
@@ -91,3 +92,60 @@ Os parâmetros `agrc` e `argv` são úteis quando você deseja que o seu program
 É importante obsrvar que os argumentos da função `main` são passados como strings, se você deseja realizar operações numéricas com os argumentos, será necessário convertê-los para o tipo de dado apropriado.
 
 Em resumo, `argc` e `argv` são os parâmetros da função `main` em C++ que permitem receber informações da linha de comando, `argc` é o número de argumentos passados e `agrv` é um array de ponteiros para strings contendo os argumentos. Você pode usar esses parâmetros para processar inputs do usuário ou configurar o comportamento do programa.
+
+# <a name="sobrecargafuncao"></a>Sobrecarga de funções
+A sobrecarga de funções (também conhecida como "overloading") permite que você defina múltiplas funções com o mesmo nome, mas com parâmetros diferentes. Isso significa que você pode ter várias funções com o mesmo nome, desde que tenham tipos de parâmetros diferentes.
+
+A sobrecarga de funções é útil quando você deseja realizar operações semelhantes, mas com diferentes tipos de dados ou números de parâmetros. O compilador C++ será capaz de determinar qual função chamar com base nos argumentos fornecidos durante a chamada da função.
+
+Aqui está um exemplo simples para ilustrar a sobrecarga de funções em C++:
+```cpp
+#include <iostream>
+
+// Função que imprime um inteiro
+void imprimirNumero(int num) {
+  std::cout << "O número inteiro é: " << num << std::endl;
+}
+
+// Função que imprime um float
+void imprimirNumero(float num) {
+  std::cout << "O número float é: " << num << std::endl;
+}
+
+int main() {
+  imprimirNumero(5);      // Chama a primeira função (imprimirNumero(int))
+  imprimirNumero(3.14f);  // Chama a segunda função (imprimirNumero(float))
+  
+  return 0;
+}
+```
+Nesse exemplo, temos duas funções chamadas `imprimirNumero`, uma que recebe um parâmetro inteiro (`int`) e outra que recebe um parâmetro float (`float`). Durante a execução, o programa chama as funções `imprimirNumero` com diferentes tipos de argumentos. O compilador C++ identifica a função correta a ser chamada com base nos tipos dos argumentos fornecidos.
+
+A sobrecarga de funções também pode ser aplicada com diferentes números de parâmetros. Aqui está um exemplo:
+```cpp
+#include <iostream>
+
+// Função que soma dois inteiros
+int somar(int a, int b) {
+  return a + b;
+}
+
+// Função que soma três inteiros
+int somar(int a, int b, int c) {
+  return a + b + c;
+}
+
+int main() {
+  int resultado1 = somar(2, 3);         // Chama a primeira função (somar(int, int))
+  int resultado2 = somar(1, 2, 3);      // Chama a segunda função (somar(int, int, int))
+  
+  std::cout << "Resultado 1: " << resultado1 << std::endl;
+  std::cout << "Resultado 2: " << resultado2 << std::endl;
+  
+  return 0;
+}
+```
+Nesse exemplo, temos duas funções chamadas `somar`, uma que recebe dois parâmetros inteiros (`int`) e outra que recebe três parâmetros inteiros. Durante a execução, o programa chama as funções `somar` com diferentes números de argumentos. O compilador C++ determina a função correta a ser chamada com base no número e nos tipos dos argumentos fornecidos.
+
+
+A sobrecarga de funções em C++ é uma ferramenta poderosa que permite escrever código mais legível e flexível, permitindo que você reutilize nomes de função para diferentes propósitos, desde que os parâmetros sejam distintos o suficiente para o compilador diferenciá-los.
