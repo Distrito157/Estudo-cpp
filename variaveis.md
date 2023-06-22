@@ -9,6 +9,7 @@
 + [Concatenação de Strings](#concatenastring)
 + [Enum (enumeração)](#enum)
 + [Pilhas (stack)](#pilhas)
++ [Fila (queue)](#fila)
 
 # <a name="introducao"></a>Introdução
 Em C++, as variáveis são usadas para armazenar valores na memória do computador.
@@ -458,3 +459,57 @@ As principais operações disponíveis para a pilha são:
 + `size()`: Retorna o número de elementos presentes na pilha.
 
 Essas são as funcionalidades básicas de uma pilha em C++. Você pode usar essas operações para manipular os elementos e controlar o fluxo de dados em uma pilha, seguindo a lógica Last-In-First-Out (LIFO).
+
+# <a name="fila"></a>Fila (Queue)
+Uma fila (queue) em C++ é uma estrutura de dados que segue o princípio do First-In-First-Out (FIFO), o que significa que o primeiro elemento inserido é o primeiro a ser removido. A fila possui duas operações principais: enqueue (inserir) e dequeue (remover).
+
+No C++, a fila é implementada pela classe `std::queue`, que é parte da biblioteca padrão do C++. Para utilizar uma fila, você precisará incluir o cabeçalho `<queue>`.
+
+Aqui está um exemplo básico de como usar uma fila em C++:
+```cpp
+#include <iostream>
+#include <queue>
+
+int main() {
+    std::queue<int> fila;
+
+    // Inserir elementos na fila
+    fila.push(10);
+    fila.push(20);
+    fila.push(30);
+
+    // Verificar se a fila está vazia
+    if (fila.empty()) {
+        std::cout << "A fila está vazia." << std::endl;
+    } else {
+        std::cout << "A fila não está vazia." << std::endl;
+    }
+
+    // Obter o elemento da frente da fila
+    std::cout << "Elemento da frente: " << fila.front() << std::endl;
+
+    // Remover o elemento da frente da fila
+    fila.pop();
+
+    // Obter o novo elemento da frente
+    std::cout << "Novo elemento da frente: " << fila.front() << std::endl;
+
+    // Tamanho da fila
+    std::cout << "Tamanho da fila: " << fila.size() << std::endl;
+
+    return 0;
+}
+```
+Nesse exemplo, a fila é declarada como `std::queue<int>`, o que significa que ela armazenará valores inteiros. No entanto, você pode usar qualquer tipo de dado como tipo de elemento da fila.
+
+As principais operações disponíveis para a fila são:
+
++ `push(valor)`: Insere o valor no final da fila.
++ `pop()`: Remove o elemento da frente da fila.
++ `front()`: Retorna o valor do elemento na frente da fila.
++ `empty()`: Retorna true se a fila estiver vazia, ou false caso contrário.
++ `size()`: Retorna o número de elementos presentes na fila.
+
+
+Essas são as funcionalidades básicas de uma fila em C++. Você pode usar essas operações para manipular os elementos e controlar o fluxo de dados em uma fila, seguindo a lógica First-In-First-Out (FIFO).
+
