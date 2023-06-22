@@ -404,3 +404,4 @@ switch (dia) {
 Nesse exemplo, o switch-case é usado para executar diferentes blocos de código com base no valor do enum "DiaDaSemana".
 
 O enum em C++ é especialmente útil quando você tem um conjunto fixo de opções ou valores que uma variável pode assumir. Ele ajuda a tornar o código mais legível, evitando o uso de valores literais arbitrários e substituindo-os por nomes significativos.
+Vídeo aula sobre o enum: [Enum, créditos ao professor Bruno](https://youtu.be/w1_-Pn6Sx2Q)
