@@ -7,6 +7,7 @@
 + [Constantes](#constantes)
 + [Inversão de valores em variáveis](#inversaodevalores)
 + [Concatenação de Strings](#concatenastring)
++ [Enum (enumeração)](#enum)
 
 # <a name="introducao"></a>Introdução
 Em C++, as variáveis são usadas para armazenar valores na memória do computador.
@@ -334,3 +335,72 @@ int main() {
 Neste exemplo, utilizamos a classe `stringstream` da biblioteca `sstream` para realizar a concatenação do número `num` com a string.
 
 Esses são os conceitos básicos e comuns para realizar a concatenação em C++. Lembre-se de que é importante converter os números em formato de string antes de realizar a concatenação.
+
+# <a name="enum"></a>Enum (enumeração)
+O enum (enumeração) em C++ é uma construção da linguagem que permite definir um novo tipo de dados personalizado, composto por um conjunto específico de valores nomeados. Os valores nomeados dentro do enum são chamados de "enumeradores". O enum fornece uma maneira conveniente de representar um conjunto limitado e predefinido de opções ou valores possíveis para uma variável ou propriedade.
+
+Aqui estão os principais aspectos do enum em C++:
+
+### Declaração: A declaração de um enum segue a seguinte sintaxe geral:
+```cpp
+enum NomeEnum {
+  Valor1,
+  Valor2,
+  Valor3,
+  // ...
+};
+```
+Onde "NomeEnum" é o nome que você dá ao enum, e "Valor1", "Valor2", "Valor3" são os enumeradores, separados por vírgulas. Por padrão, cada enumerador é associado a um valor inteiro sequencial, começando por 0. No entanto, você pode atribuir valores específicos aos enumeradores manualmente.
+
+### Atribuição manual de valores: É possível atribuir valores específicos aos enumeradores dentro do enum. Por exemplo:
+```cpp
+enum Status {
+  Inativo = 0,
+  Ativo = 1,
+  Pausado = 2
+};
+```
+Neste exemplo, os enumeradores "Inativo", "Ativo" e "Pausado" são associados aos valores 0, 1 e 2, respectivamente.
+
+### Uso de enum: Depois de declarado, um enum pode ser utilizado para criar variáveis ou propriedades com esse tipo de dado personalizado. Veja um exemplo:
+```cpp
+enum DiaDaSemana {
+  Segunda,
+  Terca,
+  Quarta,
+  Quinta,
+  Sexta,
+  Sabado,
+  Domingo
+};
+
+DiaDaSemana dia = Quarta;
+```
+Neste caso, declaramos uma variável chamada "dia" do tipo "DiaDaSemana" e atribuímos a ela o valor "Quarta", que é um enumerador definido dentro do enum "DiaDaSemana".
+
+### Comparação de enum: Você pode comparar valores de enum usando operadores de igualdade (==) e desigualdade (!=). Por exemplo:
+```cpp
+if (dia == Quarta) {
+  // Faça algo se o dia for Quarta-feira
+}
+```
+Nesse trecho de código, comparamos se a variável "dia" é igual a "Quarta", que é um enumerador do enum "DiaDaSemana".
+
+### Switch-case com enum: O enum é frequentemente utilizado com a estrutura switch-case para tomar decisões com base nos valores do enum. Veja um exemplo:
+```cpp
+switch (dia) {
+  case Segunda:
+    // Faça algo se o dia for Segunda-feira
+    break;
+  case Terca:
+    // Faça algo se o dia for Terça-feira
+    break;
+  // ...
+  default:
+    // Faça algo se o dia não corresponder a nenhum caso anterior
+    break;
+}
+```
+Nesse exemplo, o switch-case é usado para executar diferentes blocos de código com base no valor do enum "DiaDaSemana".
+
+O enum em C++ é especialmente útil quando você tem um conjunto fixo de opções ou valores que uma variável pode assumir. Ele ajuda a tornar o código mais legível, evitando o uso de valores literais arbitrários e substituindo-os por nomes significativos.
