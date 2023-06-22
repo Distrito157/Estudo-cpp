@@ -8,6 +8,7 @@
 + [Inversão de valores em variáveis](#inversaodevalores)
 + [Concatenação de Strings](#concatenastring)
 + [Enum (enumeração)](#enum)
++ [Pilhas (stack)](#pilhas)
 
 # <a name="introducao"></a>Introdução
 Em C++, as variáveis são usadas para armazenar valores na memória do computador.
@@ -405,3 +406,55 @@ Nesse exemplo, o switch-case é usado para executar diferentes blocos de código
 
 O enum em C++ é especialmente útil quando você tem um conjunto fixo de opções ou valores que uma variável pode assumir. Ele ajuda a tornar o código mais legível, evitando o uso de valores literais arbitrários e substituindo-os por nomes significativos.
 Vídeo aula sobre o enum: [Enum, créditos ao professor Bruno](https://youtu.be/w1_-Pn6Sx2Q)
+
+# <a name="pilhas"></a>Pilhas (stack)
+Uma pilha (stack) em C++ é uma estrutura de dados que segue o princípio do Last-In-First-Out (LIFO), o que significa que o último elemento inserido é o primeiro a ser removido. A pilha possui duas operações principais: push (inserir) e pop (remover).
+
+No C++, a pilha é implementada pela classe `std::stack`, que é parte da biblioteca padrão do C++. Para utilizar uma pilha, você precisará incluir o cabeçalho `<stack>`.
+
+Aqui está um exemplo básico de como usar uma pilha em C++:
+```cpp
+#include <iostream>
+#include <stack>
+
+int main() {
+    std::stack<int> pilha;
+
+    // Inserir elementos na pilha
+    pilha.push(10);
+    pilha.push(20);
+    pilha.push(30);
+
+    // Verificar se a pilha está vazia
+    if (pilha.empty()) {
+        std::cout << "A pilha está vazia." << std::endl;
+    } else {
+        std::cout << "A pilha não está vazia." << std::endl;
+    }
+
+    // Obter o elemento do topo da pilha
+    std::cout << "Elemento do topo: " << pilha.top() << std::endl;
+
+    // Remover o elemento do topo da pilha
+    pilha.pop();
+
+    // Obter o novo elemento do topo
+    std::cout << "Novo elemento do topo: " << pilha.top() << std::endl;
+
+    // Tamanho da pilha
+    std::cout << "Tamanho da pilha: " << pilha.size() << std::endl;
+
+    return 0;
+}
+```
+Nesse exemplo, a pilha é declarada como `std::stack<int>`, o que significa que ela armazenará valores inteiros. No entanto, você pode usar qualquer tipo de dado como tipo de elemento da pilha.
+
+As principais operações disponíveis para a pilha são:
+
++ `push(valor)`: Insere o valor no topo da pilha.
++ `pop()`: Remove o elemento do topo da pilha.
++ `top()`: Retorna o valor do elemento no topo da pilha.
++ `empty()`: Retorna `true` se a pilha estiver vazia, ou `false` caso contrário.
++ `size()`: Retorna o número de elementos presentes na pilha.
+
+Essas são as funcionalidades básicas de uma pilha em C++. Você pode usar essas operações para manipular os elementos e controlar o fluxo de dados em uma pilha, seguindo a lógica Last-In-First-Out (LIFO).
