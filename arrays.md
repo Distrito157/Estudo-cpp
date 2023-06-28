@@ -341,3 +341,57 @@ reverse(meuVetor.begin(), meuVetor.end());  // Inverte a ordem dos elementos
 vector<int> meuVetor = {1, 2, 3, 4, 5};
 int soma = accumulate(meuVetor.begin(), meuVetor.end(), 0);  // Soma os elementos (valor: 15)
 ```
+4. Inicialização de Vetores com Valores Padrão: Ao declarar um vetor, você pode especificar um tamanho e um valor padrão para todos os elementos usando a sintaxe a seguir:
+```cpp
+vector<int> meuVetor(5, 0);  // Vetor com 5 elementos, todos inicializados com o valor 0
+```
+Nesse exemplo, o vetor `meuVetor` é inicializado com 5 elementos, todos com o valor 0. Você pode substituir `0` por qualquer valor desejado.
+
+5. Iteradores Avançados: Além do uso do `for` e dos iteradores básicos para percorrer um vetor, o C++ oferece outras opções avançadas de iteração. Aqui estão alguns exemplos:
++ Iteração usando um loop `for` e a sintaxe do C++11:
+```cpp
+vector<int> meuVetor = {1, 2, 3, 4, 5};
+
+for (const auto& elemento : meuVetor) {
+    cout << elemento << " ";
+}
+cout << endl;
+```
+Nesse caso, `auto` é usado para deduzir automaticamente o tipo do elemento no vetor. O uso de `const` e `&` garante que o elemento seja acesado de forma eficiente e somente leitura.
++ Iteração usando funções lambda e `for_each()` da biblioteca `<algorithm>`:
+```cpp
+vector<int> meuVetor = {1, 2, 3, 4, 5};
+
+for_each(meuVetor.begin(), meuVetor.end(), [](int elemento) {
+    cout << elemento << " ";
+});
+cout << endl;
+```
+Nesse exemplo, uma função lambda é passada para `for_each()`, que executa a função para cada elemento do vetor.
+
+6. Vetores de Objetos Personalizados: Os vetores em C++ podem conter objetos personalizados definidos por você. Veja um exemplo:
+```cpp
+class Pessoa {
+public:
+    string nome;
+    int idade;
+
+    Pessoa(string _nome, int _idade) : nome(_nome), idade(_idade) {}
+};
+
+int main() {
+    vector<Pessoa> pessoas;
+    pessoas.push_back(Pessoa("João", 30));
+    pessoas.push_back(Pessoa("Maria", 25));
+
+    for (const auto& pessoa : pessoas) {
+        cout << "Nome: " << pessoa.nome << ", Idade: " << pessoa.idade << endl;
+    }
+
+    return 0;
+}
+```
+Nesse exemplo, criamos uma classe `Pessoa` e usamos um vetor de `Pessoa` para armazenar objetos personalizados. Cada objeto `Pessoa` tem um nome e uma idade, e podemos manipular esses objetos como qualquer outro elemento do vetor.
+
+7. Desempenho e Complexidade Temporal: É importante ter em mente o desempenho e a complexidade temporal ao trabalhar com vetores em C++. A maioria das operações, como acesso direto a elementos, modificação e iteração, possui complexidade O(1) ou O(N), onde N é o tamanho do vetor. No entanto, algumas operações, como inserção e exclusão em posições intermediárias do vetor, podem ter complexidade O(N), já que exigem o deslocamento de elementos. Se você precisa realizar muitas inserções ou exclusões em posições intermediárias, pode considerar o uso de outras estruturas de dados, como listas encadeadas.
+
