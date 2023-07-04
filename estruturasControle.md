@@ -1,13 +1,13 @@
 + [Introdução](#intro)
-+ [Estruturas condicionais]
++ [Estruturas condicionais](#condicionais)
     + [if](#if)
     + [switch](#switch)
-+ [Estruturas de repetição]
++ [Estruturas de repetição](#repeticao)
     + [while](#while)
     + [do while](#dowhile)
     + [for](#for)
     + [for-each](#foreach)
-+ [Estruturas de controle de fluxo]
++ [Estruturas de controle de fluxo](#fluxo)
     + [break](#break)
     + [continue](#continue)
 
@@ -15,7 +15,7 @@
 # <a name="intro"></a> Estruturas de Controle em C++
 As estruturas de controle são usadas em programação para controlar o fluxo de execução do programa. Elas permitem tomar decisões e repetir ações com base em condições específicas. Em C++, temos três principais estruturas de controle: estruturas condicionais, estruturas de repetição e estruturas de controle de fluxo.
 
-**Estruturas condicionais**
+**<a name="condicionais"></a>Estruturas condicionais**
 
 As estruturas condicionais permitem executar diferentes trechos de código com base em uma condição. Em C++, temos duas principais estruturas condicionais: `if` e `switch`.
 
@@ -66,7 +66,7 @@ switch (expressao) {
 + O bloco de código associado a cada `case` é executado se a expressão for igual ao valor especificado.
 + O bloco de código associado ao `default` é executado se nenhum dos casos anteriores for correspondido.
 
-**Estruturas de Repetição**
+**<a name="repeticao"></a>Estruturas de Repetição**
 As estruturas de repetição permitem executar um bloco de código várias vezes com base em uma condição. Em C++, temos três principais estruturas de repetição: `while`, `do-while` e `for`.
 
 # <a name="while"></a>`while`
@@ -223,7 +223,7 @@ int main() {
 ```
 Neste exemplo, temos um vetor de objetos do tipo `Pessoa`, com cada objeto contendo um nome e uma idade. Usamos o loop "for-each" para percorrer os elementos do vetor e exibir as informações de cada pessoa.
 
-**Estruturas de Controle de Fluxo**
+**<a name="fluxo"></a>Estruturas de Controle de Fluxo**
 As estruturas de controle de fluxo permitem controlar o fluxo de execução do programa, como pular para uma parte específica do código ou interromper a execução. Em C++, temos duas principais estruturas de controle de fluxo: `break` e `continue`.
 
 # <a name="break"></a>`break`
