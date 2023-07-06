@@ -5,6 +5,7 @@
 + [Funções](#funcoes)
 + [Arrays](#arrays)
 + [Ponteiros](#ponteiros)
++ [Referências](#referencias)
 + [Entrada e saída](#entradaesaida)
 + [Classes e objetos](#classeseobjetos)
 
@@ -48,14 +49,18 @@ usados em C++ para manipular arrays, criar estruturas de dados dinâmicas e trab
 memória.
 Para mais informações: [Ponteiros](ponteiros.md)
 
+# <a name="referencias"></a>Referências
+7. **Referências**: As referências em C++ são uma forma de criar um alias (um nome alternativo) para uma variável existente. Elas fornecem uma maneira conveniente de manipular variáveis sem a necessidade de ponteiros explícitos.
+Para mais informações: [Referências](referencias.md)
+
 # <a name="entradaesaida"></a>Entrada e saída
-7. **Entrada e saída:** C++ possui recursos para entrada e saída de dados. A biblioteca `<iostream>` fornece
+8. **Entrada e saída:** C++ possui recursos para entrada e saída de dados. A biblioteca `<iostream>` fornece
 objetos como `cin` e `cout` para ler e exibir dados na tela. Esses recursos são usados para interagir
 com o usuário e exibir resultados do programa.
 Para mais informações: [Entrada e saída](entradasaida.md)
 
 # <a name="classeseobjetos"></a>Classes e objetos
-8. **Classes e objetos**: C++ é uma linguagem de programação orientada a objetos, permitindo a criação
+9. **Classes e objetos**: C++ é uma linguagem de programação orientada a objetos, permitindo a criação
 de classes e objetos. As classes são estruturas que encapsulam dados e comportamentos relacionados. Os
 objetos são instâncias das classes, que podem ser criados e utilizados para interagir com os dados e
 métodos da classe.
